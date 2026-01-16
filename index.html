@@ -25,7 +25,10 @@
   <body>
     <header class="site-header">
       <div class="container header-inner">
-        <a class="logo" href="index.html">Locksmith Services</a>
+        <a class="logo" href="index.html" aria-label="Locksmith Services">
+          <span>Locksmith</span>
+          <span>Services</span>
+        </a>
         <button
           class="menu-toggle"
           aria-label="Open menu"
@@ -62,7 +65,10 @@
             <li><a href="contact.html" data-path="contact.html">Contact</a></li>
           </ul>
         </nav>
-        <a class="btn btn-primary" href="tel:+15551234567">Call Now</a>
+        <a class="header-call" href="tel:+15551234567" aria-label="Call now">
+          <span>Call</span>
+          <span>Now</span>
+        </a>
       </div>
     </header>
 
@@ -110,11 +116,7 @@
           </div>
           <div class="hero-media">
             <div class="hero-card">
-              <div
-                class="hero-image"
-                role="img"
-                aria-label="Landscape view"
-              >
+              <div class="hero-image" role="img" aria-label="Landscape view">
                 <div class="hero-card-note">
                   <div class="hero-stars" aria-hidden="true">
                     <span>★</span><span>★</span><span>★</span><span>★</span
@@ -136,73 +138,84 @@
         </div>
       </section>
 
-      <section class="section">
-        <div class="container">
-          <div class="section-header">
+      <section class="section services-showcase">
+        <div class="container services-showcase-grid">
+          <div class="services-showcase-copy">
             <h2>Services that keep you secure</h2>
+            <div class="services-showcase-underline" aria-hidden="true"></div>
             <p>
               From emergency door opening to master key systems, our locksmiths
               handle it all with minimal hassle.
             </p>
           </div>
-          <div class="cards-grid">
-            <a class="card" href="emergency.html">
-              <h3>Mobile emergency locksmith</h3>
-              <p>
-                24/7 emergency locksmith support for homes, apartments, and
-                vehicles.
-              </p>
-            </a>
-            <a class="card" href="emergency.html">
-              <h3>Emergency door opening</h3>
-              <p>
-                Non-destructive entry whenever possible to protect your
-                property.
-              </p>
-            </a>
-            <a class="card" href="security-checks.html">
-              <h3>Home & commercial security checks</h3>
-              <p>Identify weak points and upgrade your doors and locks.</p>
-            </a>
-            <a class="card" href="upvc-specialists.html">
-              <h3>uPVC door & window specialists</h3>
-              <p>
-                Repairs, alignment fixes, and replacement hardware for uPVC.
-              </p>
-            </a>
-            <a class="card" href="bs3621-insurance.html">
-              <h3>Insurance-approved locks to BS3621</h3>
-              <p>
-                High-quality locks supplied and fitted to recognized standards.
-              </p>
-            </a>
-            <a class="card" href="services.html">
-              <h3>Master key & restricted systems</h3>
-              <p>Smarter access control for offices, buildings, and rentals.</p>
-            </a>
+          <div class="services-showcase-cards">
+            <div class="cards-grid">
+              <a class="card" href="emergency.html">
+                <h3>Mobile emergency locksmith</h3>
+                <p>
+                  24/7 emergency locksmith support for homes, apartments, and
+                  vehicles.
+                </p>
+              </a>
+              <a class="card" href="emergency.html">
+                <h3>Emergency door opening</h3>
+                <p>
+                  Non-destructive entry whenever possible to protect your
+                  property.
+                </p>
+              </a>
+              <a class="card" href="security-checks.html">
+                <h3>Home & commercial security checks</h3>
+                <p>Identify weak points and upgrade your doors and locks.</p>
+              </a>
+              <a class="card" href="upvc-specialists.html">
+                <h3>uPVC door & window specialists</h3>
+                <p>
+                  Repairs, alignment fixes, and replacement hardware for uPVC.
+                </p>
+              </a>
+              <a class="card" href="bs3621-insurance.html">
+                <h3>Insurance-approved locks to BS3621</h3>
+                <p>
+                  High-quality locks supplied and fitted to recognized
+                  standards.
+                </p>
+              </a>
+              <a class="card" href="services.html">
+                <h3>Master key & restricted systems</h3>
+                <p>
+                  Smarter access control for offices, buildings, and rentals.
+                </p>
+              </a>
+            </div>
           </div>
         </div>
       </section>
 
-      <section class="section highlight">
-        <div class="container highlight-grid">
-          <div>
-            <h2>Emergency locksmith service, without the stress</h2>
-            <p>
+      <section class="section highlight stress-section">
+        <div class="container stress-grid">
+          <div class="stress-copy">
+            <h2 class="stress-title">
+              Emergency <span class="stress-accent">locksmith</span> service,
+              without the stress
+            </h2>
+            <div class="stress-underline" aria-hidden="true"></div>
+            <p class="stress-lead">
               When you need help fast, our 24/7 emergency locksmith team arrives
-              prepared. No fee just for showing up — you only pay for the work
+              prepared. No fee just for showing up - you only pay for the work
               you approve.
             </p>
-            <ul class="checklist">
+            <ul class="stress-list" aria-label="Key benefits">
               <li>No call-out charge</li>
               <li>Upfront pricing</li>
               <li>Background-checked technicians</li>
             </ul>
           </div>
-          <div class="highlight-card">
+          <div class="stress-card">
+            <div class="stress-card-badge" aria-hidden="true">24/7</div>
             <h3>Common lockout help</h3>
             <p>Home, apartment, and car lockouts handled with care.</p>
-            <a class="btn btn-outline" href="emergency.html"
+            <a class="btn btn-dark" href="emergency.html"
               >Explore Emergency Services</a
             >
           </div>
@@ -211,77 +224,202 @@
 
       <section class="section steps">
         <div class="container">
-          <div class="section-header">
-            <h2>How it works</h2>
-            <p>Clear steps to get you secure quickly.</p>
+          <div class="steps-header">
+            <div>
+              <h2>How it works</h2>
+              <p>Clear steps to get you secure quickly.</p>
+            </div>
+            <div class="steps-divider" aria-hidden="true"></div>
           </div>
           <div class="steps-grid">
-            <div class="step">
-              <span>1</span>
+            <div class="step-card">
+              <div class="step-number">01</div>
               <h3>Call</h3>
               <p>Tell us what you need and where you are.</p>
             </div>
-            <div class="step">
-              <span>2</span>
+            <div class="step-card">
+              <div class="step-number">02</div>
               <h3>We dispatch</h3>
               <p>A nearby locksmith heads your way.</p>
             </div>
-            <div class="step">
-              <span>3</span>
+            <div class="step-card">
+              <div class="step-number">03</div>
               <h3>We unlock or repair</h3>
               <p>We complete the work you approve.</p>
             </div>
-            <div class="step">
-              <span>4</span>
-              <h3>You’re secure</h3>
+            <div class="step-card">
+              <div class="step-number">04</div>
+              <h3>You're secure</h3>
               <p>We test everything and review next steps.</p>
             </div>
           </div>
         </div>
       </section>
 
-      <section class="section soft">
+      <section class="pricing-band">
+        <div class="container pricing-band-inner">
+          <div class="pricing-band-copy">
+            <h2>Starting at <span class="pricing-accent">$49.00</span></h2>
+            <p>Fixed rates. Professional results. 24/7 Service.</p>
+          </div>
+          <a class="pricing-band-cta" href="tel:+15551234567">(555) 123-4567</a>
+        </div>
+      </section>
+
+      <section class="section testimonials-section">
         <div class="container">
-          <div class="section-header">
+          <div class="testimonials-header">
             <h2>Trusted by local homeowners and businesses</h2>
             <p>Friendly locksmiths, reliable and trustworthy service.</p>
           </div>
-          <div class="cards-grid">
-            <div class="card testimonial">
-              <p>
+          <div class="testimonials-decor" aria-hidden="true">
+            <svg
+              class="lucide lucide-quote quote-decor"
+              xmlns="http://www.w3.org/2000/svg"
+              width="24"
+              height="24"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            >
+              <path
+                d="M16 3a2 2 0 0 0-2 2v6a2 2 0 0 0 2 2 1 1 0 0 1 1 1v1a2 2 0 0 1-2 2 1 1 0 0 0-1 1v2a1 1 0 0 0 1 1 6 6 0 0 0 6-6V5a2 2 0 0 0-2-2z"
+              />
+              <path
+                d="M5 3a2 2 0 0 0-2 2v6a2 2 0 0 0 2 2 1 1 0 0 1 1 1v1a2 2 0 0 1-2 2 1 1 0 0 0-1 1v2a1 1 0 0 0 1 1 6 6 0 0 0 6-6V5a2 2 0 0 0-2-2z"
+              />
+            </svg>
+            <svg
+              class="lucide lucide-quote quote-decor"
+              xmlns="http://www.w3.org/2000/svg"
+              width="24"
+              height="24"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            >
+              <path
+                d="M16 3a2 2 0 0 0-2 2v6a2 2 0 0 0 2 2 1 1 0 0 1 1 1v1a2 2 0 0 1-2 2 1 1 0 0 0-1 1v2a1 1 0 0 0 1 1 6 6 0 0 0 6-6V5a2 2 0 0 0-2-2z"
+              />
+              <path
+                d="M5 3a2 2 0 0 0-2 2v6a2 2 0 0 0 2 2 1 1 0 0 1 1 1v1a2 2 0 0 1-2 2 1 1 0 0 0-1 1v2a1 1 0 0 0 1 1 6 6 0 0 0 6-6V5a2 2 0 0 0-2-2z"
+              />
+            </svg>
+          </div>
+          <div class="testimonials-grid">
+            <div class="testimonial-item">
+              <div class="testimonial-bubble" aria-hidden="true">
+                <svg
+                  class="lucide lucide-quote quote-icon"
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="24"
+                  height="24"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                >
+                  <path
+                    d="M16 3a2 2 0 0 0-2 2v6a2 2 0 0 0 2 2 1 1 0 0 1 1 1v1a2 2 0 0 1-2 2 1 1 0 0 0-1 1v2a1 1 0 0 0 1 1 6 6 0 0 0 6-6V5a2 2 0 0 0-2-2z"
+                  />
+                  <path
+                    d="M5 3a2 2 0 0 0-2 2v6a2 2 0 0 0 2 2 1 1 0 0 1 1 1v1a2 2 0 0 1-2 2 1 1 0 0 0-1 1v2a1 1 0 0 0 1 1 6 6 0 0 0 6-6V5a2 2 0 0 0-2-2z"
+                  />
+                </svg>
+              </div>
+              <p class="testimonial-quote">
                 “Fast, professional, and transparent. The tech explained every
                 option before starting.”
               </p>
-              <span>— Jamie R., Homeowner</span>
+              <div class="testimonial-meta">
+                <div class="testimonial-name">Jamie R.</div>
+                <div class="testimonial-role">Homeowner</div>
+              </div>
             </div>
-            <div class="card testimonial">
-              <p>
+            <div class="testimonial-item">
+              <div class="testimonial-bubble" aria-hidden="true">
+                <svg
+                  class="lucide lucide-quote quote-icon"
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="24"
+                  height="24"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                >
+                  <path
+                    d="M16 3a2 2 0 0 0-2 2v6a2 2 0 0 0 2 2 1 1 0 0 1 1 1v1a2 2 0 0 1-2 2 1 1 0 0 0-1 1v2a1 1 0 0 0 1 1 6 6 0 0 0 6-6V5a2 2 0 0 0-2-2z"
+                  />
+                  <path
+                    d="M5 3a2 2 0 0 0-2 2v6a2 2 0 0 0 2 2 1 1 0 0 1 1 1v1a2 2 0 0 1-2 2 1 1 0 0 0-1 1v2a1 1 0 0 0 1 1 6 6 0 0 0 6-6V5a2 2 0 0 0-2-2z"
+                  />
+                </svg>
+              </div>
+              <p class="testimonial-quote">
                 “Great experience after a late-night lockout. No call-out charge
                 and fair pricing.”
               </p>
-              <span>— Michael T., Tenant</span>
+              <div class="testimonial-meta">
+                <div class="testimonial-name">Michael T.</div>
+                <div class="testimonial-role">Tenant</div>
+              </div>
             </div>
-            <div class="card testimonial">
-              <p>
+            <div class="testimonial-item">
+              <div class="testimonial-bubble" aria-hidden="true">
+                <svg
+                  class="lucide lucide-quote quote-icon"
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="24"
+                  height="24"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                >
+                  <path
+                    d="M16 3a2 2 0 0 0-2 2v6a2 2 0 0 0 2 2 1 1 0 0 1 1 1v1a2 2 0 0 1-2 2 1 1 0 0 0-1 1v2a1 1 0 0 0 1 1 6 6 0 0 0 6-6V5a2 2 0 0 0-2-2z"
+                  />
+                  <path
+                    d="M5 3a2 2 0 0 0-2 2v6a2 2 0 0 0 2 2 1 1 0 0 1 1 1v1a2 2 0 0 1-2 2 1 1 0 0 0-1 1v2a1 1 0 0 0 1 1 6 6 0 0 0 6-6V5a2 2 0 0 0-2-2z"
+                  />
+                </svg>
+              </div>
+              <p class="testimonial-quote">
                 “They upgraded our office locks and set up a master key system
                 with minimal downtime.”
               </p>
-              <span>— Priya S., Office Manager</span>
+              <div class="testimonial-meta">
+                <div class="testimonial-name">Priya S.</div>
+                <div class="testimonial-role">Office manager</div>
+              </div>
             </div>
           </div>
         </div>
       </section>
 
-      <section class="section">
+      <section class="section faq-section">
         <div class="container">
           <div class="section-header">
             <h2>Quick answers</h2>
             <p>Find out what to expect before you call.</p>
           </div>
-          <div class="accordion">
+          <div class="accordion faq-accordion">
             <div class="accordion-item">
               <button class="accordion-toggle" aria-expanded="false">
-                What does “no call-out charge” mean?
+                What does "no call-out charge" mean?
               </button>
               <div class="accordion-panel">
                 <p>
@@ -353,29 +491,54 @@
         <div>
           <h3>Locksmith Services</h3>
           <p>
-            Trusted locksmiths for emergency lockout service, security checks,
-            and lock upgrades.
+            Locksmith Services helps homeowners connect with independent
+            locksmith service providers for lockout help, repairs, and security
+            upgrades.
           </p>
-        </div>
-        <div>
-          <h4>Service Area</h4>
-          <p>Serving [City] and surrounding areas.</p>
-        </div>
-        <div>
-          <h4>Contact</h4>
-          <p><a href="tel:+15551234567">(555) 123-4567</a></p>
-          <p><a href="mailto:info@example.com">info@example.com</a></p>
-          <p>Hours: 24/7 Emergency</p>
         </div>
         <div>
           <h4>Quick Links</h4>
           <p><a href="services.html">Services</a></p>
           <p><a href="emergency.html">Emergency</a></p>
-          <p><a href="contact.html">Get a Quote</a></p>
+          <p><a href="security-checks.html">Security Checks</a></p>
+          <p><a href="upvc-specialists.html">uPVC</a></p>
+          <p><a href="bs3621-insurance.html">BS3621</a></p>
+          <p><a href="about.html">About</a></p>
+          <p><a href="faq.html">FAQ</a></p>
+          <p><a href="contact.html">Contact</a></p>
+        </div>
+        <div>
+          <h4>Contact</h4>
+          <p><a href="tel:+15551234567">(555) 123-4567</a></p>
+          <p><a href="mailto:info@example.com">info@example.com</a></p>
+          <p>Service Area: United States</p>
+          <p>Hours: 24/7 Emergency</p>
+        </div>
+        <div>
+          <h4>Legal</h4>
+          <p><a href="#">Privacy Policy</a></p>
+          <p><a href="#">Terms of Service</a></p>
+          <p><a href="#">Cookie Policy</a></p>
         </div>
       </div>
       <div class="container footer-bottom">
-        <p>Locally owned • Upfront pricing • Background-checked technicians</p>
+        <p>© 2026 LockHero. All rights reserved.</p>
+        <p>
+          Website Operator: SHOPCANARY s.r.o.<br />
+          Registered Address: Rybná 716/24, Staré Město, 110 00 Praha 1, Czech
+          Republic<br />
+          Company Registration No.: C 398373, Municipal Court in Prague
+        </p>
+        <p class="footer-disclaimer">
+          Disclaimer: getluxurybath.com is a free service to assist homeowners
+          in connecting with local service providers. All contractors/providers
+          are independent and getluxurybath.com does not warrant or guarantee
+          any work performed. It is the responsibility of the homeowner to
+          verify that the hired contractor furnishes the necessary license and
+          insurance required for the work being performed. All persons depicted
+          in a photo or video are actors or models and not contractors listed on
+          this site.
+        </p>
       </div>
     </footer>
   </body>
