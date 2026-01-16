@@ -86,27 +86,44 @@
         </div>
       </section>
 
-      <section class="section" id="emergency">
-        <div class="container">
-          <div class="section-header">
+      <section class="section services-emergency" id="emergency">
+        <div class="container services-emergency-grid">
+          <div class="services-emergency-header">
+            <div class="services-emergency-pill">
+              <span
+                class="services-emergency-pill-dot"
+                aria-hidden="true"
+              ></span>
+              24/7 emergency
+            </div>
             <h2>Emergency locksmith</h2>
+            <div class="services-emergency-underline" aria-hidden="true"></div>
             <p>
               Fast, professional lockout service for homes, apartments, and
               vehicles. No call-out charge and upfront pricing.
             </p>
           </div>
-          <div class="cards-grid">
-            <div class="card">
+          <div class="services-emergency-cards" aria-label="Emergency services">
+            <div class="services-emergency-card">
+              <div class="services-emergency-card-icon" aria-hidden="true">
+                01
+              </div>
               <h3>Home lockout</h3>
               <p>
                 Locked out of your house? We restore access quickly and safely.
               </p>
             </div>
-            <div class="card">
+            <div class="services-emergency-card">
+              <div class="services-emergency-card-icon" aria-hidden="true">
+                02
+              </div>
               <h3>Apartment lockout</h3>
               <p>We coordinate access for rentals and multi-unit buildings.</p>
             </div>
-            <div class="card">
+            <div class="services-emergency-card">
+              <div class="services-emergency-card-icon" aria-hidden="true">
+                03
+              </div>
               <h3>Car lockout</h3>
               <p>Non-destructive entry for most modern vehicles.</p>
             </div>
@@ -114,21 +131,23 @@
         </div>
       </section>
 
-      <section class="section soft">
-        <div class="container split-grid">
-          <div>
+      <section class="section services-open">
+        <div class="container services-open-grid">
+          <div class="services-open-copy">
+            <p class="services-open-eyebrow">No stress. Just entry.</p>
             <h2>Emergency door opening</h2>
+            <div class="services-open-underline" aria-hidden="true"></div>
             <p>
               Our locksmiths arrive prepared to open doors with minimal damage
               whenever possible. We explain options before work begins.
             </p>
-            <ul class="checklist">
+            <ul class="services-open-list" aria-label="Key benefits">
               <li>24/7 emergency locksmith availability</li>
               <li>Upfront pricing before work starts</li>
               <li>Locally owned and trusted</li>
             </ul>
           </div>
-          <div class="info-card alert">
+          <div class="services-open-card">
             <h3>No call-out charge</h3>
             <p>
               No fee just for showing up - you only pay for the work you
@@ -139,57 +158,57 @@
         </div>
       </section>
 
-      <section class="section">
+      <section class="section services-menu">
         <div class="container">
-          <div class="cards-grid">
-            <div class="card">
+          <div class="services-menu-grid" id="services-menu-grid">
+            <div class="services-menu-item">
               <h3>Mobile emergency locksmith</h3>
               <p>
                 24/7 emergency locksmith response for lockouts and urgent
                 repairs.
               </p>
             </div>
-            <div class="card">
+            <div class="services-menu-item">
               <h3>Emergency door opening</h3>
               <p>
                 Fast access restoration with minimal damage whenever possible.
               </p>
             </div>
-            <div class="card">
+            <div class="services-menu-item">
               <h3>Home & commercial security checks</h3>
               <p>On-site assessments for doors, windows, and access points.</p>
             </div>
-            <div class="card">
+            <div class="services-menu-item">
               <h3>uPVC door & window specialists</h3>
               <p>Handle alignment, handle replacements, and lock repairs.</p>
             </div>
-            <div class="card">
+            <div class="services-menu-item">
               <h3>Boarding & burglary repairs</h3>
               <p>Secure your property quickly after damage or break-ins.</p>
             </div>
-            <div class="card">
+            <div class="services-menu-item">
               <h3>All locks supplied & fitted</h3>
               <p>Quality hardware installed with clear pricing and options.</p>
             </div>
-            <div class="card">
+            <div class="services-menu-item">
               <h3>Insurance-approved locks to BS3621</h3>
               <p>
                 Recognized standard options for improved security and
                 compliance.
               </p>
             </div>
-            <div class="card">
+            <div class="services-menu-item">
               <h3>Master key systems</h3>
               <p>
                 Streamlined access for offices, multi-unit buildings, and
                 rentals.
               </p>
             </div>
-            <div class="card">
+            <div class="services-menu-item">
               <h3>Restricted suit systems</h3>
               <p>Controlled key duplication to keep access secure.</p>
             </div>
-            <div class="card">
+            <div class="services-menu-item">
               <h3>Friendly, reliable service</h3>
               <p>
                 Professional locksmiths who communicate clearly and
@@ -197,10 +216,21 @@
               </p>
             </div>
           </div>
+          <div class="services-menu-actions">
+            <button
+              class="services-menu-toggle"
+              type="button"
+              aria-expanded="false"
+              aria-controls="services-menu-grid"
+              data-services-menu-toggle
+            >
+              Show more
+            </button>
+          </div>
         </div>
       </section>
 
-      <section class="section" id="security-checks">
+      <section class="section cta-band services-security-band" id="security-checks">
         <div class="container split-grid">
           <div>
             <p class="eyebrow">Home & Commercial Security Checks</p>
@@ -218,174 +248,599 @@
             </ul>
           </div>
           <div class="info-card">
-            <h3>Service Area</h3>
+            <h3>What to expect</h3>
             <p>
-              Serving [City] and surrounding areas for home and commercial
-              security checks.
+              A clear walk-through of weak points, priorities, and upgrade
+              options.
             </p>
-            <p>Upfront pricing and clear recommendations.</p>
+            <p>Upfront pricing and recommendations you can approve or decline.</p>
+            <div class="services-security-badges" aria-label="Highlights">
+              <span>Checklist</span>
+              <span>Prioritized</span>
+              <span>Upfront</span>
+            </div>
           </div>
         </div>
       </section>
 
-      <section class="section soft">
-        <div class="container">
-          <div class="section-header">
+      <section class="section services-upgrades">
+        <div class="container services-upgrades-grid">
+          <div class="services-upgrades-copy">
             <h2>Upgrade recommendations</h2>
+            <div class="services-upgrades-underline" aria-hidden="true"></div>
             <p>
               We suggest improvements based on your property, budget, and
               insurance needs.
             </p>
           </div>
-          <div class="cards-grid">
-            <div class="card">
+          <div class="services-upgrades-cards" aria-label="Upgrade recommendations">
+            <a class="services-upgrades-card" href="#bs3621">
+              <div class="services-upgrades-card-icon" aria-hidden="true">
+                <svg
+                  class="services-upgrades-icon"
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="24"
+                  height="24"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                >
+                  <path d="M7 11V7a5 5 0 0 1 10 0v4" />
+                  <rect x="5" y="11" width="14" height="10" rx="2" />
+                  <path d="M12 16v2" />
+                </svg>
+              </div>
               <h3>High-security locks</h3>
               <p>
                 Reinforced cylinders, stronger key control, and durable
                 hardware.
               </p>
-            </div>
-            <div class="card">
+            </a>
+            <a class="services-upgrades-card" href="#security-checks">
+              <div class="services-upgrades-card-icon" aria-hidden="true">
+                <svg
+                  class="services-upgrades-icon"
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="24"
+                  height="24"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                >
+                  <path d="M12 2 4 6v6c0 5 3.6 9.4 8 10 4.4-.6 8-5 8-10V6l-8-4Z" />
+                  <path d="M9 12l2 2 4-4" />
+                </svg>
+              </div>
               <h3>Strike plate upgrades</h3>
               <p>Heavy-duty plates and longer screws for extra resistance.</p>
-            </div>
-            <div class="card">
+            </a>
+            <a class="services-upgrades-card" href="#security-checks">
+              <div class="services-upgrades-card-icon" aria-hidden="true">
+                <svg
+                  class="services-upgrades-icon"
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="24"
+                  height="24"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                >
+                  <path d="M12 3a7 7 0 1 0 7 7" />
+                  <path d="M12 10v4l2 2" />
+                  <path d="M19 3v4h-4" />
+                </svg>
+              </div>
               <h3>Smart lock compatibility</h3>
               <p>
                 General guidance on smart lock options and installation
                 readiness.
               </p>
-            </div>
+            </a>
           </div>
         </div>
       </section>
 
-      <section class="section" id="upvc">
-        <div class="container">
-          <div class="section-header">
-            <h2>uPVC door & window specialists</h2>
-            <p>
+      <section class="section services-upvc" id="upvc">
+        <div class="container services-upvc-shell">
+          <div class="services-upvc-media" role="img" aria-label="uPVC hardware">
+            <div class="services-upvc-media-tag">uPVC</div>
+            <div class="services-upvc-media-note">
+              Repairs, alignment fixes, and multi-point lock solutions.
+            </div>
+          </div>
+          <div class="services-upvc-content">
+            <p class="services-upvc-kicker">uPVC door & window specialists</p>
+            <h2>Keep everything closing smoothly</h2>
+            <p class="services-upvc-lead">
               We repair misalignment, worn hardware, and damaged locks for uPVC
               systems with a focus on long-term reliability.
             </p>
-          </div>
-          <div class="cards-grid">
-            <div class="card">
-              <h3>Misaligned doors</h3>
-              <p>
-                Adjustments to hinges and locking points for smooth closing.
-              </p>
-            </div>
-            <div class="card">
-              <h3>Stiff or broken handles</h3>
-              <p>Replacement handles and internal mechanisms.</p>
-            </div>
-            <div class="card">
-              <h3>Failed multi-point locks</h3>
-              <p>Repair or replace to restore full security.</p>
+            <div class="services-upvc-list" aria-label="uPVC services">
+              <div class="services-upvc-list-item">
+                <div class="services-upvc-list-icon" aria-hidden="true">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="24"
+                    height="24"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  >
+                    <path d="M3 7h18" />
+                    <path d="M3 17h18" />
+                    <path d="M7 7v10" />
+                    <path d="M17 7v10" />
+                    <path d="M9 12h6" />
+                  </svg>
+                </div>
+                <div>
+                  <h3>Misaligned doors</h3>
+                  <p>
+                    Adjustments to hinges and locking points for smooth closing.
+                  </p>
+                </div>
+              </div>
+              <div class="services-upvc-list-item">
+                <div class="services-upvc-list-icon" aria-hidden="true">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="24"
+                    height="24"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  >
+                    <path d="M7 12h10" />
+                    <path d="M9 10v4" />
+                    <path d="M14 10v4" />
+                    <path d="M4 6h16v12H4z" />
+                  </svg>
+                </div>
+                <div>
+                  <h3>Stiff or broken handles</h3>
+                  <p>Replacement handles and internal mechanisms.</p>
+                </div>
+              </div>
+              <div class="services-upvc-list-item">
+                <div class="services-upvc-list-icon" aria-hidden="true">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="24"
+                    height="24"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  >
+                    <path d="M7 11V7a5 5 0 0 1 10 0v4" />
+                    <rect x="5" y="11" width="14" height="10" rx="2" />
+                    <path d="M12 16v2" />
+                  </svg>
+                </div>
+                <div>
+                  <h3>Failed multi-point locks</h3>
+                  <p>Repair or replace to restore full security.</p>
+                </div>
+              </div>
             </div>
           </div>
         </div>
       </section>
 
-      <section class="section soft">
-        <div class="container">
-          <div class="section-header">
+      <section class="section services-decision">
+        <div class="container services-decision-grid">
+          <div class="services-decision-copy">
             <h2>Repair vs. replace</h2>
+            <div class="services-decision-underline" aria-hidden="true"></div>
             <p>We'll recommend the most cost-effective option.</p>
+            <div class="services-decision-meter" aria-hidden="true">
+              <span>Repair</span>
+              <div class="services-decision-bar">
+                <div class="services-decision-fill"></div>
+              </div>
+              <span>Replace</span>
+            </div>
           </div>
-          <div class="cards-grid">
-            <div class="card">
+          <div class="services-decision-cards" aria-label="Decision guide">
+            <div class="services-decision-card services-decision-card--repair">
+              <div class="services-decision-icon" aria-hidden="true">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="24"
+                  height="24"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                >
+                  <path d="M14.7 6.3a1 1 0 0 1 0 1.4l-8 8a2 2 0 0 1-.7.4l-3 1a1 1 0 0 1-1.3-1.3l1-3a2 2 0 0 1 .4-.7l8-8a1 1 0 0 1 1.4 0z" />
+                  <path d="M7 7l10 10" />
+                </svg>
+              </div>
               <h3>Repair</h3>
               <p>
                 Best when hardware is intact and alignment fixes solve the
                 issue.
               </p>
+              <div class="services-decision-badges" aria-label="Repair signals">
+                <span>Alignment</span><span>Adjustment</span><span>Quick fix</span>
+              </div>
             </div>
-            <div class="card">
+            <div class="services-decision-card services-decision-card--replace">
+              <div class="services-decision-icon" aria-hidden="true">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="24"
+                  height="24"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                >
+                  <path d="M4 7h16" />
+                  <path d="M7 7v14h10V7" />
+                  <path d="M9 3h6v4H9z" />
+                </svg>
+              </div>
               <h3>Replace</h3>
               <p>
                 Recommended for worn mechanisms or outdated security hardware.
               </p>
+              <div class="services-decision-badges" aria-label="Replace signals">
+                <span>Worn parts</span><span>Upgrade</span><span>Security</span>
+              </div>
             </div>
           </div>
         </div>
       </section>
 
-      <section class="section" id="bs3621">
-        <div class="container split-grid">
-          <div>
-            <p class="eyebrow">Insurance-approved locks</p>
-            <h2>BS3621 explained in plain English</h2>
-            <p>
+      <section class="section services-bs" id="bs3621">
+        <div class="container services-bs-shell">
+          <div class="services-bs-head">
+            <p class="services-bs-eyebrow">Insurance-approved locks</p>
+            <h2>BS3621, explained simply</h2>
+            <p class="services-bs-lede">
               BS3621 is a recognized security standard used by many insurers. We
-              supply and fit BS3621-rated locks for added protection.
+              supply and fit BS3621-rated locks for added protection and better
+              peace of mind.
             </p>
-            <ul class="checklist">
-              <li>Recognized security standard option</li>
-              <li>Improved resistance to drilling and picking</li>
-              <li>Helps meet insurer expectations</li>
-            </ul>
           </div>
-          <div class="info-card">
-            <h3>Insurance-approved locks supplied & fitted</h3>
-            <p>
-              We recommend lock options that align with your property and
-              insurance needs.
-            </p>
-            <p>Serving [City] and surrounding areas.</p>
+
+          <div class="services-bs-grid">
+            <div class="services-bs-copy">
+              <ul class="services-bs-checklist" aria-label="BS3621 highlights">
+                <li>
+                  <span class="services-bs-tick" aria-hidden="true"></span>
+                  Recognized security standard option
+                </li>
+                <li>
+                  <span class="services-bs-tick" aria-hidden="true"></span>
+                  Improved resistance to drilling and picking
+                </li>
+                <li>
+                  <span class="services-bs-tick" aria-hidden="true"></span>
+                  Helps meet insurer expectations
+                </li>
+              </ul>
+
+              <div class="services-bs-note">
+                <div class="services-bs-note-icon" aria-hidden="true">
+                  <svg
+                    viewBox="0 0 24 24"
+                    width="22"
+                    height="22"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M7 10V7a5 5 0 0110 0v3"
+                      stroke="currentColor"
+                      stroke-width="2"
+                      stroke-linecap="round"
+                    />
+                    <path
+                      d="M6.5 10H17.5a2 2 0 012 2v7a2 2 0 01-2 2H6.5a2 2 0 01-2-2v-7a2 2 0 012-2z"
+                      stroke="currentColor"
+                      stroke-width="2"
+                      stroke-linejoin="round"
+                    />
+                  </svg>
+                </div>
+                <div>
+                  <h3>Insurance-approved locks supplied &amp; fitted</h3>
+                  <p>
+                    We recommend lock options that align with your door type and
+                    insurance needs.
+                  </p>
+                  <p class="services-bs-note-sub">
+                    We’ll confirm compatibility before work begins and explain
+                    the trade-offs clearly.
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <div class="services-bs-panel" aria-label="Who BS3621 helps">
+              <div class="services-bs-cards">
+                <div class="services-bs-card">
+                  <div class="services-bs-card-icon" aria-hidden="true">
+                    <svg
+                      viewBox="0 0 24 24"
+                      width="22"
+                      height="22"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        d="M3 10.5L12 4l9 6.5V21a1 1 0 01-1 1H4a1 1 0 01-1-1v-10.5z"
+                        stroke="currentColor"
+                        stroke-width="2"
+                        stroke-linejoin="round"
+                      />
+                      <path
+                        d="M9 22v-8a3 3 0 016 0v8"
+                        stroke="currentColor"
+                        stroke-width="2"
+                        stroke-linecap="round"
+                      />
+                    </svg>
+                  </div>
+                  <h3>Homeowners</h3>
+                  <p>Improve entry security and meet insurer expectations.</p>
+                </div>
+
+                <div class="services-bs-card">
+                  <div class="services-bs-card-icon" aria-hidden="true">
+                    <svg
+                      viewBox="0 0 24 24"
+                      width="22"
+                      height="22"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        d="M4 21V8l8-4 8 4v13"
+                        stroke="currentColor"
+                        stroke-width="2"
+                        stroke-linejoin="round"
+                      />
+                      <path
+                        d="M9 21v-7a3 3 0 013-3 3 3 0 013 3v7"
+                        stroke="currentColor"
+                        stroke-width="2"
+                        stroke-linecap="round"
+                      />
+                      <path
+                        d="M7.5 10h9"
+                        stroke="currentColor"
+                        stroke-width="2"
+                        stroke-linecap="round"
+                      />
+                    </svg>
+                  </div>
+                  <h3>Landlords</h3>
+                  <p>Maintain strong security across multiple units.</p>
+                </div>
+
+                <div class="services-bs-card">
+                  <div class="services-bs-card-icon" aria-hidden="true">
+                    <svg
+                      viewBox="0 0 24 24"
+                      width="22"
+                      height="22"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        d="M4 21V7a1 1 0 011-1h14a1 1 0 011 1v14"
+                        stroke="currentColor"
+                        stroke-width="2"
+                        stroke-linejoin="round"
+                      />
+                      <path
+                        d="M9 21v-7h6v7"
+                        stroke="currentColor"
+                        stroke-width="2"
+                        stroke-linecap="round"
+                      />
+                      <path
+                        d="M8 10h8"
+                        stroke="currentColor"
+                        stroke-width="2"
+                        stroke-linecap="round"
+                      />
+                      <path
+                        d="M8 6h8"
+                        stroke="currentColor"
+                        stroke-width="2"
+                        stroke-linecap="round"
+                      />
+                    </svg>
+                  </div>
+                  <h3>Businesses</h3>
+                  <p>Protect entry points and reduce access risk.</p>
+                </div>
+              </div>
+
+              <div class="services-bs-cta">
+                <div class="services-bs-cta-copy">
+                  <p class="services-bs-cta-title">Not sure what you have?</p>
+                  <p class="services-bs-cta-sub">
+                    We’ll check your current lock and recommend the best next
+                    step.
+                  </p>
+                </div>
+                <a class="btn btn-primary btn-call" href="tel:+15551234567">
+                  <span class="icon-phone" aria-hidden="true"></span>
+                  Call Now
+                </a>
+              </div>
+            </div>
           </div>
         </div>
       </section>
 
-      <section class="section soft">
-        <div class="container">
-          <div class="section-header">
-            <h2>Is BS3621 right for you?</h2>
-            <p>
-              We'll review your current locks and recommend upgrades if needed.
-            </p>
-          </div>
-          <div class="cards-grid">
-            <div class="card">
-              <h3>Homeowners</h3>
-              <p>Improve entry security and meet insurer expectations.</p>
-            </div>
-            <div class="card">
-              <h3>Landlords</h3>
-              <p>Maintain strong security across multiple units.</p>
-            </div>
-            <div class="card">
-              <h3>Businesses</h3>
-              <p>Protect entry points and reduce access risk.</p>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      <section class="section soft">
-        <div class="container split-grid">
-          <div>
+      <section class="section soft services-included">
+        <div class="container services-included-grid">
+          <div class="services-included-copy">
             <h2>What's included</h2>
-            <ul class="checklist">
-              <li>Upfront pricing and clear recommendations</li>
-              <li>No call-out charge policy</li>
-              <li>Background-checked technicians</li>
-              <li>Locally owned support team</li>
-              <li>Careful cleanup and final testing</li>
+            <p class="services-included-subtitle">
+              Clear steps, clean work, and zero surprises.
+            </p>
+            <ul class="services-included-list" aria-label="Included with service">
+              <li>
+                <span class="services-included-tick" aria-hidden="true"></span>
+                Upfront pricing and clear recommendations
+              </li>
+              <li>
+                <span class="services-included-tick" aria-hidden="true"></span>
+                No call-out charge policy
+              </li>
+              <li>
+                <span class="services-included-tick" aria-hidden="true"></span>
+                Background-checked technicians
+              </li>
+              <li>
+                <span class="services-included-tick" aria-hidden="true"></span>
+                Locally owned support team
+              </li>
+              <li>
+                <span class="services-included-tick" aria-hidden="true"></span>
+                Careful cleanup and final testing
+              </li>
             </ul>
           </div>
-          <div class="info-card">
-            <h3>Service Area</h3>
-            <p>
-              Serving [City] and surrounding areas with mobile locksmith
-              coverage.
-            </p>
-            <p>
-              No fee just for showing up — you only pay for the work you
-              approve.
-            </p>
-          </div>
+
+          <aside class="services-included-card" aria-label="What you get">
+            <div class="services-included-ribbon" aria-hidden="true">
+              Included
+            </div>
+            <div class="services-included-card-top">
+              <div class="services-included-card-icon" aria-hidden="true">
+                <svg
+                  viewBox="0 0 24 24"
+                  width="22"
+                  height="22"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M20 7L10 17l-5-5"
+                    stroke="currentColor"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  />
+                </svg>
+              </div>
+              <div>
+                <h3>Approved before we start</h3>
+                <p>
+                  We explain options clearly and only proceed with the work you
+                  approve.
+                </p>
+              </div>
+            </div>
+
+            <ul class="services-included-promises" aria-label="Service promises">
+              <li>
+                <span class="services-included-promise-icon" aria-hidden="true">
+                  <svg
+                    viewBox="0 0 24 24"
+                    width="18"
+                    height="18"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"
+                      stroke="currentColor"
+                      stroke-width="2"
+                      stroke-linejoin="round"
+                    />
+                  </svg>
+                </span>
+                Transparent options
+              </li>
+              <li>
+                <span class="services-included-promise-icon" aria-hidden="true">
+                  <svg
+                    viewBox="0 0 24 24"
+                    width="18"
+                    height="18"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M12 8v4l3 3"
+                      stroke="currentColor"
+                      stroke-width="2"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    />
+                    <path
+                      d="M21 12a9 9 0 11-9-9 9 9 0 019 9z"
+                      stroke="currentColor"
+                      stroke-width="2"
+                      stroke-linejoin="round"
+                    />
+                  </svg>
+                </span>
+                Fast, focused work
+              </li>
+              <li>
+                <span class="services-included-promise-icon" aria-hidden="true">
+                  <svg
+                    viewBox="0 0 24 24"
+                    width="18"
+                    height="18"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M20 7L10 17l-5-5"
+                      stroke="currentColor"
+                      stroke-width="2"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    />
+                  </svg>
+                </span>
+                Tested before we leave
+              </li>
+            </ul>
+
+            <div class="services-included-card-bottom">
+              <p class="services-included-card-note">
+                Need urgent help? We’re available 24/7 for lockouts.
+              </p>
+              <a class="btn btn-primary btn-call" href="tel:+15551234567">
+                <span class="icon-phone" aria-hidden="true"></span>
+                Call Now
+              </a>
+            </div>
+          </aside>
         </div>
       </section>
 

@@ -34,16 +34,21 @@ document.addEventListener("DOMContentLoaded", () => {
   window.addEventListener("scroll", setScrolled);
   setScrolled();
 
-  document.querySelectorAll(".accordion-toggle").forEach((btn) => {
-    btn.addEventListener("click", () => {
-      const panel = btn.nextElementSibling;
-      const isOpen = btn.getAttribute("aria-expanded") === "true";
-      btn.setAttribute("aria-expanded", String(!isOpen));
-      if (panel) {
-        panel.style.maxHeight = !isOpen ? panel.scrollHeight + "px" : "0px";
-      }
+  const registerAccordion = (toggleSelector) => {
+    document.querySelectorAll(toggleSelector).forEach((btn) => {
+      btn.addEventListener("click", () => {
+        const panel = btn.nextElementSibling;
+        const isOpen = btn.getAttribute("aria-expanded") === "true";
+        btn.setAttribute("aria-expanded", String(!isOpen));
+        if (panel) {
+          panel.style.maxHeight = !isOpen ? panel.scrollHeight + "px" : "0px";
+        }
+      });
     });
-  });
+  };
+
+  registerAccordion(".accordion-toggle");
+  registerAccordion(".faqpage-toggle");
 
   document.querySelectorAll('a[href^="#"]').forEach((anchor) => {
     anchor.addEventListener("click", (event) => {
@@ -54,6 +59,16 @@ document.addEventListener("DOMContentLoaded", () => {
       event.preventDefault();
       target.scrollIntoView({ behavior: "smooth" });
       closeMenu();
+    });
+  });
+
+  document.querySelectorAll("[data-services-menu-toggle]").forEach((btn) => {
+    btn.addEventListener("click", () => {
+      const section = btn.closest(".services-menu");
+      if (!section) return;
+      const isExpanded = section.classList.toggle("is-expanded");
+      btn.setAttribute("aria-expanded", String(isExpanded));
+      btn.textContent = isExpanded ? "Show less" : "Show more";
     });
   });
 
