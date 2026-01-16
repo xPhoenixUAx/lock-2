@@ -58,10 +58,26 @@ document.addEventListener("DOMContentLoaded", () => {
   });
 
   const currentPath = location.pathname.split("/").pop() || "index.html";
+  const currentHash = location.hash || "";
   document.querySelectorAll(".nav-links a").forEach((link) => {
-    const linkPath = link.getAttribute("data-path");
-    if (linkPath === currentPath) {
-      link.classList.add("active");
+    const href = link.getAttribute("href") || "";
+    if (!href) return;
+    let linkPath = link.getAttribute("data-path");
+    let linkHash = "";
+
+    try {
+      const url = new URL(href, location.href);
+      linkPath = url.pathname.split("/").pop() || linkPath;
+      linkHash = url.hash || "";
+    } catch {
+      // ignore
     }
+
+    if (linkPath !== currentPath) return;
+    if (linkHash) {
+      if (linkHash === currentHash) link.classList.add("active");
+      return;
+    }
+    if (!currentHash) link.classList.add("active");
   });
 });
