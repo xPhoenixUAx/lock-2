@@ -2,6 +2,7 @@ document.addEventListener("DOMContentLoaded", () => {
   const header = document.querySelector(".site-header");
   const menuToggle = document.querySelector(".menu-toggle");
   const navLinks = document.querySelector(".nav-links");
+  const COOKIE_CONSENT_KEY = "lp_cookie_consent";
 
   const setScrolled = () => {
     if (!header) return;
@@ -95,4 +96,79 @@ document.addEventListener("DOMContentLoaded", () => {
     }
     if (!currentHash) link.classList.add("active");
   });
+
+  const getCookie = (name) => {
+    const cookieValue = document.cookie
+      .split("; ")
+      .find((row) => row.startsWith(`${name}=`));
+    if (!cookieValue) return null;
+    return decodeURIComponent(cookieValue.split("=").slice(1).join("="));
+  };
+
+  const getStoredConsent = () => {
+    try {
+      const fromStorage = localStorage.getItem(COOKIE_CONSENT_KEY);
+      if (fromStorage === "accepted" || fromStorage === "declined") return fromStorage;
+    } catch {
+      // ignore
+    }
+
+    const fromCookie = getCookie(COOKIE_CONSENT_KEY);
+    if (fromCookie === "accepted" || fromCookie === "declined") return fromCookie;
+    return null;
+  };
+
+  const storeConsent = (value) => {
+    try {
+      localStorage.setItem(COOKIE_CONSENT_KEY, value);
+    } catch {
+      // ignore
+    }
+
+    document.cookie = `${COOKIE_CONSENT_KEY}=${encodeURIComponent(value)}; Max-Age=31536000; Path=/; SameSite=Lax`;
+  };
+
+  const showCookieBanner = () => {
+    if (getStoredConsent()) return;
+    if (document.getElementById("cookie-banner")) return;
+
+    const banner = document.createElement("section");
+    banner.className = "cookie-banner";
+    banner.id = "cookie-banner";
+    banner.setAttribute("role", "dialog");
+    banner.setAttribute("aria-label", "Cookie consent");
+    banner.innerHTML = `
+      <p class="cookie-banner__text">
+        We use cookies to enhance your browsing experience and analyze site traffic. By continuing to use our website, you consent to our use of cookies.
+        <a class="cookie-banner__link" href="cookie-policy.html">Learn more</a>
+      </p>
+      <div class="cookie-banner__actions">
+        <button type="button" class="btn btn-outline" data-cookie-decline>Decline</button>
+        <button type="button" class="btn btn-primary" data-cookie-accept>Accept</button>
+      </div>
+    `.trim();
+
+    const acceptBtn = banner.querySelector("[data-cookie-accept]");
+    const declineBtn = banner.querySelector("[data-cookie-decline]");
+
+    const dismiss = () => {
+      banner.classList.add("is-hidden");
+      window.setTimeout(() => banner.remove(), 250);
+    };
+
+    acceptBtn?.addEventListener("click", () => {
+      storeConsent("accepted");
+      dismiss();
+    });
+
+    declineBtn?.addEventListener("click", () => {
+      storeConsent("declined");
+      dismiss();
+    });
+
+    document.body.appendChild(banner);
+    acceptBtn?.focus();
+  };
+
+  showCookieBanner();
 });
