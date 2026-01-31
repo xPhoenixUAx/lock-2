@@ -73,7 +73,10 @@ document.addEventListener("DOMContentLoaded", () => {
     });
   });
 
-  const currentPath = location.pathname.split("/").pop() || "index.html";
+  const currentPathRaw = location.pathname.split("/").pop() || "index.html";
+  const currentPath = currentPathRaw.startsWith("service-")
+    ? "services.html"
+    : currentPathRaw;
   const currentHash = location.hash || "";
   document.querySelectorAll(".nav-links a").forEach((link) => {
     const href = link.getAttribute("href") || "";
