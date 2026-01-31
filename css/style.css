@@ -306,6 +306,39 @@ textarea:focus-visible {
   border-bottom: 1px solid rgba(15, 23, 42, 0.08);
 }
 
+.pricing-hero {
+  background-image:
+    linear-gradient(
+      180deg,
+      rgba(255, 255, 255, 0.92) 0%,
+      rgba(255, 255, 255, 0.82) 45%,
+      rgba(255, 255, 255, 0.96) 100%
+    ),
+    url("../assets/lock-sup.jpeg");
+  background-size: cover;
+  background-position: center;
+  border-bottom: 1px solid rgba(15, 23, 42, 0.08);
+}
+
+.pricing-hero .hero-screenshot-grid {
+  grid-template-columns: 1fr;
+}
+
+.pricing-hero .hero-copy {
+  max-width: 760px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.pricing-hero .hero-pill {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.pricing-hero .hero-links {
+  justify-content: center;
+}
+
 .services-hero .hero-screenshot-grid {
   grid-template-columns: 1fr;
 }
@@ -4049,6 +4082,10 @@ textarea:focus-visible {
   margin-bottom: var(--space-sm);
 }
 
+.muted {
+  color: var(--color-muted);
+}
+
 .hero-actions {
   display: flex;
   flex-wrap: wrap;
@@ -4509,6 +4546,77 @@ textarea:focus-visible {
 
 .card h3 {
   margin-top: 0;
+}
+
+.pricing-section {
+  background:
+    radial-gradient(
+      900px circle at 10% 15%,
+      rgba(230, 244, 255, 0.7),
+      transparent 55%
+    ),
+    radial-gradient(
+      700px circle at 90% 45%,
+      rgba(253, 236, 236, 0.7),
+      transparent 55%
+    ),
+    #ffffff;
+  border-top: 1px solid rgba(15, 23, 42, 0.06);
+  border-bottom: 1px solid rgba(15, 23, 42, 0.06);
+}
+
+.pricing-card h2 {
+  margin: 0 0 14px;
+  font-size: clamp(1.15rem, 2.2vw, 1.35rem);
+  letter-spacing: -0.02em;
+}
+
+.pricing-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: grid;
+  gap: 10px;
+}
+
+.pricing-list li {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: baseline;
+  gap: 12px;
+  padding: 10px 12px;
+  border-radius: 14px;
+  border: 1px solid rgba(225, 231, 238, 0.9);
+  background: linear-gradient(
+    180deg,
+    #ffffff 0%,
+    rgba(246, 249, 252, 0.86) 100%
+  );
+}
+
+.pricing-list li span {
+  font-weight: 650;
+  color: var(--color-text);
+}
+
+.pricing-list li strong {
+  margin-left: auto;
+  white-space: nowrap;
+  color: var(--color-alert);
+  font-weight: 900;
+  letter-spacing: 0.02em;
+}
+
+.pricing-card-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--space-sm);
+  margin-top: var(--space-md);
+}
+
+.pricing-note {
+  margin-top: var(--space-lg);
+  max-width: 680px;
 }
 
 .highlight {
