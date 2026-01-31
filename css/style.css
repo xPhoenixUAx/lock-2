@@ -5415,6 +5415,10 @@ textarea:focus-visible {
   text-align: center;
 }
 
+.center-link--spaced {
+  margin-top: 18px;
+}
+
 .faq-section {
   background:
     radial-gradient(
@@ -6316,7 +6320,7 @@ textarea:focus-visible {
   color: #ffffff;
   border-radius: 6px;
   padding: 8px 12px;
-  border: 1px solid var(--Color-alert-dark, var(--color-alert-dark));
+  border: 1px solid var(--color-alert-dark);
   box-shadow: 0 8px 18px rgba(185, 28, 28, 0.1);
   font-weight: 700;
   font-size: 0.9rem;
@@ -6335,4 +6339,11 @@ textarea:focus-visible {
 
 .service-category .btn.btn-outline:hover {
   background: rgba(220, 38, 38, 0.06);
+}
+
+.service-category-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  align-items: center;
 }
