@@ -5,13 +5,13 @@
     <title>Pricing | Locksmith Services</title>
     <meta
       name="description"
-      content="Indicative starting prices for emergency, residential, commercial, and specialty locksmith services. Final quotes confirmed after assessment."
+      content="Transparent starting prices for locksmith services. After-hours and emergency rates may vary."
     />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta property="og:title" content="Pricing | Locksmith Services" />
     <meta
       property="og:description"
-      content="See indicative starting prices by category. Final quotes provided after assessment."
+      content="See transparent starting prices by category. After-hours and emergency rates may vary."
     />
     <meta property="og:type" content="website" />
     <meta property="og:image" content="assets/placeholder.png" />
@@ -20,6 +20,7 @@
     <link rel="shortcut icon" href="assets/favicon.svg" />
     <link rel="stylesheet" href="css/style.css" />
     <script defer src="js/main.js"></script>
+    <script defer src="js/form.js"></script>
   </head>
   <body>
     <header class="site-header">
@@ -38,13 +39,19 @@
             <span>Services</span>
           </span>
         </a>
-        <button class="menu-toggle" aria-label="Open menu" aria-expanded="false">
+        <button
+          class="menu-toggle"
+          aria-label="Open menu"
+          aria-expanded="false"
+        >
           <span></span><span></span><span></span>
         </button>
         <nav class="site-nav" aria-label="Main">
           <ul class="nav-links">
             <li><a href="index.html" data-path="index.html">Home</a></li>
-            <li><a href="services.html" data-path="services.html">Services</a></li>
+            <li>
+              <a href="services.html" data-path="services.html">Services</a>
+            </li>
             <li><a href="pricing.html" data-path="pricing.html">Pricing</a></li>
             <li><a href="about.html" data-path="about.html">About</a></li>
             <li><a href="faq.html" data-path="faq.html">FAQ</a></li>
@@ -66,9 +73,10 @@
                 <span class="hero-pill-dot" aria-hidden="true"></span>
                 Pricing
               </div>
-              <h1>Pricing by category</h1>
+              <h1>Pricing</h1>
               <p>
-                Indicative starting prices. Final quotes provided after assessment.
+                Transparent starting prices. After-hours and emergency rates may
+                vary &mdash; please ask for details.
               </p>
               <div class="hero-links" aria-label="Jump to pricing categories">
                 <a href="#commercial">Commercial</a>
@@ -88,157 +96,194 @@
         <div class="container">
           <div class="cards-grid pricing-cards" aria-label="Pricing cards">
             <article class="card pricing-card" id="commercial">
-              <h2>Commercial Locksmith Services</h2>
+              <h2>Commercial</h2>
               <ul class="pricing-list" aria-label="Commercial pricing">
-                <li><span>Site survey &amp; quote</span><strong>Free</strong></li>
+                <li><span>Service call</span><strong>$29.00</strong></li>
                 <li>
-                  <span>Access control installation</span><strong>from $250</strong>
+                  <span>Lock rekey (ask for details)</span
+                  ><strong>$45.00</strong>
                 </li>
                 <li>
-                  <span>Master key system design</span><strong>from $350</strong>
+                  <span>Deadbolt / door knob / grip set installation</span
+                  ><strong>$70.00</strong>
                 </li>
                 <li>
-                  <span>Lock repair / replacement</span><strong>from $80</strong>
+                  <span>Door closer (price may change)</span
+                  ><strong>$55.00</strong>
                 </li>
               </ul>
               <div class="pricing-card-actions">
                 <a class="btn btn-outline" href="services.html#commercial"
                   >See service details</a
                 >
-                <a class="btn btn-outline" href="detailed-services.html#commercial"
+                <a
+                  class="btn btn-outline"
+                  href="detailed-services.html#commercial"
                   >More details</a
                 >
               </div>
             </article>
 
             <article class="card pricing-card" id="residential">
-              <h2>Residential Locksmith Services</h2>
+              <h2>Residential</h2>
               <ul class="pricing-list" aria-label="Residential pricing">
                 <li>
-                  <span>House entry / opening</span><strong>from $49</strong>
-                </li>
-                <li><span>Cylinder replacement</span><strong>from $85</strong></li>
-                <li>
-                  <span>Smart lock installation</span><strong>from $150</strong>
+                  <span>Residential deadbolt lock</span><strong>$45.00</strong>
                 </li>
                 <li>
-                  <span>Security upgrade package</span><strong>from $120</strong>
+                  <span>Residential door knob</span><strong>$45.00</strong>
+                </li>
+                <li>
+                  <span>Residential lever handle</span><strong>$65.00</strong>
+                </li>
+                <li>
+                  <span>Mailbox lock replacement</span><strong>$85.00</strong>
                 </li>
               </ul>
               <div class="pricing-card-actions">
                 <a class="btn btn-outline" href="services.html#residential"
                   >See service details</a
                 >
-                <a class="btn btn-outline" href="detailed-services.html#residential"
+                <a
+                  class="btn btn-outline"
+                  href="detailed-services.html#residential"
                   >More details</a
                 >
               </div>
             </article>
 
             <article class="card pricing-card" id="emergency">
-              <h2>Emergency Locksmith Services</h2>
+              <h2>Emergency</h2>
               <ul class="pricing-list" aria-label="Emergency pricing">
-                <li><span>Emergency call-out</span><strong>from $49</strong></li>
                 <li>
-                  <span>Non-destructive entry</span><strong>from $60</strong>
+                  <span>Door opening / gain entry</span><strong>$70.00</strong>
                 </li>
-                <li><span>On-site repairs</span><strong>from $80</strong></li>
+                <li>
+                  <span>Garage door opening / gain entry</span
+                  ><strong>$70.00</strong>
+                </li>
+                <li><span>Car opening</span><strong>$65.00</strong></li>
               </ul>
               <div class="pricing-card-actions">
                 <a class="btn btn-outline" href="services.html#emergency"
                   >See service details</a
                 >
+                <a
+                  class="btn btn-outline"
+                  href="detailed-services.html#emergency"
+                  >More details</a
+                >
               </div>
             </article>
 
             <article class="card pricing-card" id="storefront">
-              <h2>Storefront Door Repair</h2>
+              <h2>Storefront</h2>
               <ul class="pricing-list" aria-label="Storefront pricing">
                 <li>
-                  <span>Door alignment &amp; adjustment</span
-                  ><strong>from $90</strong>
+                  <span>Door closer (price may change)</span
+                  ><strong>$55.00</strong>
+                </li>
+                <li><span>Service call</span><strong>$29.00</strong></li>
+                <li>
+                  <span>Lock rekey (ask for details)</span
+                  ><strong>$45.00</strong>
                 </li>
                 <li>
-                  <span>Panic bar / push bar repair</span><strong>from $75</strong>
-                </li>
-                <li>
-                  <span>Replacement hardware</span><strong>from $120</strong>
+                  <span>Deadbolt / door knob / grip set installation</span
+                  ><strong>$70.00</strong>
                 </li>
               </ul>
               <div class="pricing-card-actions">
                 <a class="btn btn-outline" href="services.html#storefront"
                   >See service details</a
                 >
-                <a class="btn btn-outline" href="detailed-services.html#storefront"
+                <a
+                  class="btn btn-outline"
+                  href="detailed-services.html#storefront"
                   >More details</a
                 >
               </div>
             </article>
 
             <article class="card pricing-card" id="eviction">
-              <h2>Property Eviction</h2>
+              <h2>Eviction</h2>
               <ul class="pricing-list" aria-label="Eviction pricing">
+                <li><span>Service call</span><strong>$29.00</strong></li>
                 <li>
-                  <span>Boarding &amp; securing</span><strong>from $120</strong>
+                  <span>Lock rekey (ask for details)</span
+                  ><strong>$45.00</strong>
                 </li>
                 <li>
-                  <span>Lock changes &amp; rekey</span><strong>from $95</strong>
+                  <span>Door opening / gain entry</span><strong>$70.00</strong>
                 </li>
                 <li>
-                  <span>Site re-securing</span><strong>from $150</strong>
+                  <span>Deadbolt / door knob / grip set installation</span
+                  ><strong>$70.00</strong>
                 </li>
               </ul>
               <div class="pricing-card-actions">
                 <a class="btn btn-outline" href="services.html#eviction"
                   >See service details</a
                 >
-                <a class="btn btn-outline" href="detailed-services.html#eviction"
+                <a
+                  class="btn btn-outline"
+                  href="detailed-services.html#eviction"
                   >More details</a
                 >
               </div>
             </article>
 
             <article class="card pricing-card" id="safe-opening">
-              <h2>Safe Opening</h2>
+              <h2>Safe opening</h2>
               <ul class="pricing-list" aria-label="Safe pricing">
+                <li><span>Service call</span><strong>$29.00</strong></li>
                 <li>
-                  <span>Non-destructive opening</span><strong>from $150</strong>
+                  <span>Door opening / gain entry</span><strong>$70.00</strong>
                 </li>
                 <li>
-                  <span>Safe lock replacement</span><strong>from $220</strong>
+                  <span>Lock rekey (ask for details)</span
+                  ><strong>$45.00</strong>
                 </li>
                 <li>
-                  <span>Safe repair &amp; service</span><strong>from $180</strong>
+                  <span>Mailbox lock replacement</span><strong>$85.00</strong>
                 </li>
               </ul>
               <div class="pricing-card-actions">
                 <a class="btn btn-outline" href="services.html#safe-opening"
                   >See service details</a
                 >
-                <a class="btn btn-outline" href="detailed-services.html#safe-opening"
+                <a
+                  class="btn btn-outline"
+                  href="detailed-services.html#safe-opening"
                   >More details</a
                 >
               </div>
             </article>
 
             <article class="card pricing-card" id="panic-bar">
-              <h2>Push Bar / Panic Bar</h2>
+              <h2>Push bar / panic bar</h2>
               <ul class="pricing-list" aria-label="Panic bar pricing">
+                <li><span>Service call</span><strong>$29.00</strong></li>
                 <li>
-                  <span>Supply &amp; install</span><strong>from $180</strong>
+                  <span>Door closer (price may change)</span
+                  ><strong>$55.00</strong>
                 </li>
                 <li>
-                  <span>Repair / adjustment</span><strong>from $75</strong>
+                  <span>Lock rekey (ask for details)</span
+                  ><strong>$45.00</strong>
                 </li>
                 <li>
-                  <span>Compliance assessment</span><strong>from $60</strong>
+                  <span>Deadbolt / door knob / grip set installation</span
+                  ><strong>$70.00</strong>
                 </li>
               </ul>
               <div class="pricing-card-actions">
                 <a class="btn btn-outline" href="services.html#panic-bar"
                   >See service details</a
                 >
-                <a class="btn btn-outline" href="detailed-services.html#panic-bar"
+                <a
+                  class="btn btn-outline"
+                  href="detailed-services.html#panic-bar"
                   >More details</a
                 >
               </div>
@@ -246,9 +291,76 @@
           </div>
 
           <p class="muted pricing-note">
-            Prices are indicative. Exact pricing depends on scope, location, and
-            parts required.
+            Door opening prices may change for high-security locks. After-hours
+            and emergency calls may have different rates &mdash; please ask for
+            details.
           </p>
+        </div>
+      </section>
+
+      <section class="section pricing-form-section">
+        <div class="container">
+          <div class="section-header">
+            <h2>Request a quote</h2>
+            <p>Send details and we'll confirm pricing and availability.</p>
+          </div>
+
+          <div class="contactpage-form-wrap">
+            <form class="contactpage-form" id="pricing-form" data-contact-form>
+              <div class="contactpage-fields">
+                <label class="contactpage-field">
+                  <span>Full name *</span>
+                  <input type="text" name="name" required />
+                </label>
+                <label class="contactpage-field">
+                  <span>Phone *</span>
+                  <input
+                    type="tel"
+                    name="phone"
+                    required
+                    placeholder="(555) 123-4567"
+                  />
+                </label>
+                <label class="contactpage-field">
+                  <span>Email *</span>
+                  <input
+                    type="email"
+                    name="email"
+                    required
+                    placeholder="you@example.com"
+                  />
+                </label>
+                <label class="contactpage-field">
+                  <span>Service type</span>
+                  <select name="service">
+                    <option value="Door opening / gain entry">
+                      Door opening / gain entry
+                    </option>
+                    <option value="Lock rekey">Lock rekey</option>
+                    <option value="Lock installation">Lock installation</option>
+                    <option value="Car opening">Car opening</option>
+                    <option value="Mailbox lock replacement">
+                      Mailbox lock replacement
+                    </option>
+                    <option value="Other">Other</option>
+                  </select>
+                </label>
+                <label class="contactpage-field contactpage-field--full">
+                  <span>Message</span>
+                  <textarea
+                    name="message"
+                    rows="3"
+                    placeholder="Tell us what you need help with"
+                  ></textarea>
+                </label>
+              </div>
+
+              <div class="contactpage-form-actions">
+                <button class="btn btn-primary" type="submit">Send</button>
+                <p class="form-message" role="status" aria-live="polite"></p>
+              </div>
+            </form>
+          </div>
         </div>
       </section>
 
@@ -256,7 +368,9 @@
         <div class="container cta-band-inner">
           <div>
             <h2>Need an exact quote?</h2>
-            <p>Call now for urgent help or request a quote for non-urgent work.</p>
+            <p>
+              Call now for urgent help or request a quote for non-urgent work.
+            </p>
           </div>
           <div class="cta-actions">
             <a class="btn btn-primary" href="tel:+15551234567"
@@ -286,8 +400,9 @@
             </span>
           </a>
           <p>
-            Locksmith Services helps homeowners connect with independent locksmith
-            service providers for lockout help, repairs, and security upgrades.
+            Locksmith Services helps homeowners connect with independent
+            locksmith service providers for lockout help, repairs, and security
+            upgrades.
           </p>
         </div>
         <div>
@@ -316,18 +431,19 @@
         <p>© 2026 Locksmith Services. All rights reserved.</p>
         <p>
           Website Operator: SHOPCANARY s.r.o.<br />
-          Registered Address: Rybná 716/24, Staré Město, 110 00 Praha 1, Czech
-          Republic<br />
+          Registered Address: Rybn&aacute; 716/24, Star&eacute; M&#283;sto, 110
+          00 Praha 1, Czech Republic<br />
           Company Registration No.: C 398373, Municipal Court in Prague
         </p>
         <p class="footer-disclaimer">
-          Disclaimer: locksmithservices.com is a free service to assist homeowners
-          in connecting with local service providers. All contractors/providers
-          are independent and locksmithservices.com does not warrant or guarantee
-          any work performed. It is the responsibility of the homeowner to verify
-          that the hired contractor furnishes the necessary license and insurance
-          required for the work being performed. All persons depicted in a photo
-          or video are actors or models and not contractors listed on this site.
+          Disclaimer: locksmithservices.com is a free service to assist
+          homeowners in connecting with local service providers. All
+          contractors/providers are independent and locksmithservices.com does
+          not warrant or guarantee any work performed. It is the responsibility
+          of the homeowner to verify that the hired contractor furnishes the
+          necessary license and insurance required for the work being performed.
+          All persons depicted in a photo or video are actors or models and not
+          contractors listed on this site.
         </p>
       </div>
     </footer>

@@ -4,6 +4,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
   const message = form.querySelector(".form-message");
   const submitBtn = form.querySelector("button[type='submit']");
+  const submitBtnInitialText = submitBtn ? submitBtn.textContent : "";
   const phoneRegex = /^\+?[\d\s().-]{7,}$/;
 
   const showMessage = (text, isError = false) => {
@@ -37,7 +38,7 @@ document.addEventListener("DOMContentLoaded", () => {
       showMessage("Thanks! Your request has been sent. We will contact you shortly.");
       form.reset();
       submitBtn.disabled = false;
-      submitBtn.textContent = "Send Request";
+      submitBtn.textContent = submitBtnInitialText || "Send";
     }, 900);
   });
 });
