@@ -74,9 +74,15 @@ document.addEventListener("DOMContentLoaded", () => {
   });
 
   const currentPathRaw = location.pathname.split("/").pop() || "index.html";
-  const currentPath = currentPathRaw.startsWith("service-")
-    ? "services.html"
-    : currentPathRaw;
+  let currentPath = currentPathRaw;
+  if (currentPathRaw.startsWith("service-")) {
+    currentPath = "services.html";
+  } else if (
+    currentPathRaw.startsWith("blog-post-") ||
+    currentPathRaw === "blog-post-template.html"
+  ) {
+    currentPath = "blog.html";
+  }
   const currentHash = location.hash || "";
   document.querySelectorAll(".nav-links a").forEach((link) => {
     const href = link.getAttribute("href") || "";
